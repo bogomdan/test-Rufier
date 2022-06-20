@@ -1,0 +1,76 @@
+# нап иши здесь свое приложение
+age = 7 
+name = ""
+p1, p2, p3 = 0,0,0
+Class InstrScr(Screen)
+    def __init__(self **kwargs):
+        super().__init__(**kwargs)
+
+
+    def next(self):
+        global in_name
+        self.manager.current ='sits'
+
+Class PulseScr(Screen):
+    def __init__(self **kwargs):
+        super().__init__(**kwargs)
+
+def next(self):
+    global p1
+    self.manager.current ='sits'
+
+
+Class Checksits(Screen)
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+
+
+Class PulseScr2(Screen):
+    def __init__(self, **kwargs):
+
+
+
+    def next(self):
+        global p2 p3
+    self.manager.current = 'result'
+ 
+Class result(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+        self.outer = BoxLayout(orientation='vertical', padding=8,
+        self.Instr = Label(text = '')
+        self.outer.add_Widget(self.Instr)
+        self.add_Widget(self.outer)
+        self.on_enter = self.before
+
+    def before(self):
+        global name
+
+Class HeartCheck(app):
+    def Build(self:)
+        sm = Screenmanager()
+        sm.add_Widget(InstrScr(name='instr'))
+        sm.add_Widget(PulseScr(name='pulse1'))
+        sm.add_Widget(Checksits(name='sits'))
+        sm.add_Widget(PulseScr2(name='pulse2'))
+        sm.add_Widget(result(name='result'))
+        return sm
+
+        self.outer.add_Widget(self.instr)
+        self.add_Widget(self.outer)
+        self.on_enter = self.before
+    def before(self):
+        global name
+
+Class HeartCheck(App):
+     
+    def Build(self):
+        Screenmanager(InstrScr(name='instr'))
+        sm.add_Widget(PulseScr(name='pulse1'))
+        sm.add_Widget(Checksits(name='sits'))
+        sm.add_Widget(PulseScr2(name='pulse2'))
+        sm.add_Widget(result(name='result'))
+        return.sm
+
+app = HeartCheck()
+app.run()
